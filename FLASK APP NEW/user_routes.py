@@ -13,7 +13,7 @@ import hashlib
 #define db as database
 db = database()
 
-@app.route('login', methods = ["POST", "GET"])
+@app.route('/login', methods = ["POST", "GET"])
 def login():
     title = "LOG IN"
     form = LoginForm()
