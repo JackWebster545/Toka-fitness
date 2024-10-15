@@ -9,6 +9,6 @@ class NameForm(FlaskForm):
 
 class LoginForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(),Email()])
-    password = PasswordField('Password', validators[DataRequired(),Length(min =1, max = 10, message = "Too many values")])
+    password = PasswordField('Password', validators=[DataRequired(),Length(min =1, max = 10, message = "Too many values")])
     remember = BooleanField('Remember Me')
     submit = Submitfield('Login')
